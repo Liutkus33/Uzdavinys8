@@ -11,27 +11,27 @@
         }
 
         container {
-            height: 99vmin;
-            width: 99vmin;            
+            height: 98vmin;
+            width: 98vmin;            
             margin: 0 0;
-            padding: 0 0;
+            padding: 6px;
             display: flex;
             flex-direction: column;            
-            border: 3px solid black;
+            border: 0px solid black;
         }
 
         header {
             display: flex;
             flex-direction: row;
             flex-grow: 1;
-            align-items:stretch;
+            align-items:stretch;            
         }
 
         mid {
             display: flex;
             flex-direction: row;
             flex: 1 1 auto;
-            flex-grow: 8;            
+            flex-grow: 8;                        
         }
 
         footer {
@@ -47,25 +47,28 @@
         .a, .b, .c, .d, .e, .f, .g, .h, .i {
             padding: 0 0;
             border: 0px solid black;
-            margin: 6px;
+            margin: 3px;
             overflow: hidden;
         }
         .a {
-            flex-grow: 7.5;        
+            flex-grow: 7.5;    
             background-color: greenyellow; 
-            margin-right: auto; 
-            margin-left: 6px;              
+                        
         }
         .b {
             flex-grow: 2.5;   
             background-color: greenyellow; 
-            margin-right: 0px;
-            margin-left: 12px;        
+                    
         }
         .c {
             background-color: aqua;
             flex-grow: 2;
         }
+
+        mid > :nth-child(1) {
+            
+        }
+
         mid > :nth-child(2) {
             
             flex-grow: 5.5;            
