@@ -17,79 +17,86 @@
             padding: 6px;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
 
         header {
             display: flex;
             flex-direction: row;
-            flex: 1; 
+            flex-basis: 10%;
+            justify-content: space-between; 
         }
 
         mid {
             display: flex;
             flex-direction: row;            
-            flex: 6;            
+            flex-basis: 80%;
+            justify-content: space-between;            
         }
 
         footer {
             flex-direction: column;            
-            flex: 1;
+            flex-basis: 10%;
         }
 
         div {
             display: flex;
+            flex-direction: column;
         }
         mid> :nth-child(1) {
             flex-direction: column;
+            flex-basis: 20%;
         }
 
         mid> :nth-child(2) {
-            flex: 2;
-            flex-direction: column;            
+            flex-basis: 55%;
+            flex-direction: column;
+            justify-content: space-between;            
         }
 
         mid> :nth-child(3) {
-            flex: 1;
+            flex-basis: 25%;
             flex-direction: column;
+            justify-content: space-between;
         }
 
         .a {
-            flex: 3;
+            flex-basis: 75%;
             background-color: greenyellow;
         }
 
         .b {
-            flex: 1;
+            flex-basis: 25%;
             background-color: greenyellow;
         }
 
         .c {
             background-color: aqua;
-            flex: 1;
+            flex-basis: 100%;
         }
 
         .d {
-            flex: 1;
+            flex-basis: 15%;
             background-color: red;
         }
 
         .e {
-            flex: 1;
+            flex-basis: 15%;
             background-color: red;
         }
 
         .g {
-            flex: 4;
+            flex-basis: 70%;
             background-color: red;
         }
 
         .f {
-            flex: 2;
+            flex-basis: 30%;
             background-color: antiquewhite;
         }
 
         .h {
-            flex: 4;
+            flex-basis: 70%;
             background-color: antiquewhite;
         }
 
