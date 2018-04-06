@@ -1,125 +1,128 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />    
-    <title>Uzdavinys8</title>  
+    <meta charset="utf-8" />
+    <title>Uzdavinys8</title>
     <style>
         body {
             margin: 0 0;
             padding: 0 0;
-            display: flex;                       
+            display: flex;
         }
 
         container {
             height: 98vmin;
-            width: 98vmin;            
-            margin: 0 0;
+            width: 98vmin;
             padding: 6px;
             display: flex;
-            flex-direction: column;            
-            border: 0px solid black;
+            flex-direction: column;
         }
 
         header {
             display: flex;
             flex-direction: row;
-            flex-grow: 1.08;
-            align-items:stretch;
-                        
+            flex: 1; 
         }
 
         mid {
             display: flex;
-            flex-direction: row;
-            flex: 1 1 auto;
-            flex-grow: 8;   
-                            
+            flex-direction: row;            
+            flex: 6;            
         }
 
         footer {
-            flex-grow: 1;
-            flex: 1 1 auto;
-            
+            flex-direction: column;            
+            flex: 1;
         }
+
         div {
             display: flex;
+        }
+        mid> :nth-child(1) {
             flex-direction: column;
-            flex: 1 1 auto;
         }
-        .a, .b, .c, .d, .e, .f, .g, .h, .i {
-            padding: 0 0;
-            border: 0px solid black;
-            margin: 3px;
-            overflow: hidden;
+
+        mid> :nth-child(2) {
+            flex: 2;
+            flex-direction: column;            
         }
+
+        mid> :nth-child(3) {
+            flex: 1;
+            flex-direction: column;
+        }
+
         .a {
-            flex-grow: 7.5;    
-            background-color: greenyellow; 
-                        
+            flex: 3;
+            background-color: greenyellow;
         }
+
         .b {
-            flex-grow: 2.5;   
-            background-color: greenyellow; 
-                    
+            flex: 1;
+            background-color: greenyellow;
         }
+
         .c {
             background-color: aqua;
-            flex-grow: 2;
+            flex: 1;
         }
 
-        mid > :nth-child(1) {
-            
-        }
-
-        mid > :nth-child(2) {
-            
-            flex-grow: 5.5;            
-        }
-        mid > :nth-child(3) {
-            flex-grow: 2.5;            
-        }
         .d {
-            flex-grow: 1.5;
+            flex: 1;
             background-color: red;
         }
+
         .e {
-            flex-grow: 1.5;
+            flex: 1;
             background-color: red;
         }
+
         .g {
-            flex-grow: 8;
+            flex: 4;
             background-color: red;
         }
+
         .f {
-            flex-grow: 3.3;
+            flex: 2;
             background-color: antiquewhite;
-            
         }
+
         .h {
-            flex-grow: 7.8;
+            flex: 4;
             background-color: antiquewhite;
-            
         }
+
         .i {
             background-color: forestgreen;
         }
+
+        .a, .b, .c, .d, .e, .f, .g, .h, .i {
+            margin: 3px;
+        }
     </style>
 </head>
+
 <body>
     <container>
         <header>
-            <div class="a">A</div><div class="b">B</div>
+            <div class="a">A</div>
+            <div class="b">B</div>
         </header>
         <mid>
             <div class="c">C</div>
             <div>
-                <div class="d">D</div><div class="e">E</div><div class="g">G</div>
+                <div class="d">D</div>
+                <div class="e">E</div>
+                <div class="g">G</div>
             </div>
             <div>
-                <div class="f">F</div><div class="h">H</div>
-            </div>                 
+                <div class="f">F</div>
+                <div class="h">H</div>
+            </div>
         </mid>
         <footer class="i">I</footer>
     </container>
 </body>
+
 </html>
